@@ -5,6 +5,34 @@
 
 body {
   background: linear-gradient(to right, hsl(200, 100%, 50%), hsl(175, 100%, 50%));
+  overflow: hidden;
+}
+
+header h1, header h2, header h3 {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.date-time {
+  /* background-color: pink; */
+  max-width: 50%;
+  display: flex;
+  margin: 0 auto;
+
+  /* Align in Horizontal Axis */
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.date {
+  /* background-color: gray; */
+}
+
+.time {
+  /* background-color: orangered; */
+}
+
+.container {
   display: flex;
 
   /* Align in Horizontal Axis */
@@ -12,7 +40,7 @@ body {
   align-items: center;
 
   /* Align in Vertical Axis */
-  min-height: 100vh;
+  min-height: 65vh;
   overflow: hidden;
 }
 
@@ -47,6 +75,76 @@ body {
 .clock .number10 { --rotation: 300deg; }
 .clock .number11 { --rotation: 330deg; }
 .clock .number12 { --rotation: 0deg; }
+
+.clock .mark {
+  --rotation: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform: rotate(var(--rotation));
+  font-size: 0.65rem;
+}
+
+.clock .minute0_1 { --rotation: 6deg; }
+.clock .minute0_2 { --rotation: 12deg; }
+.clock .minute0_3 { --rotation: 18deg; }
+.clock .minute0_4 { --rotation: 24deg; }
+
+.clock .minute1_1 { --rotation: 36deg; }
+.clock .minute1_2 { --rotation: 42deg; }
+.clock .minute1_3 { --rotation: 48deg; }
+.clock .minute1_4 { --rotation: 54deg; }
+
+.clock .minute2_1 { --rotation: 66deg; }
+.clock .minute2_2 { --rotation: 72deg; }
+.clock .minute2_3 { --rotation: 78deg; }
+.clock .minute2_4 { --rotation: 84deg; }
+
+.clock .minute3_1 { --rotation: 96deg; }
+.clock .minute3_2 { --rotation: 102deg; }
+.clock .minute3_3 { --rotation: 108deg; }
+.clock .minute3_4 { --rotation: 114deg; }
+
+.clock .minute4_1 { --rotation: 126deg; }
+.clock .minute4_2 { --rotation: 132deg; }
+.clock .minute4_3 { --rotation: 138deg; }
+.clock .minute4_4 { --rotation: 144deg; }
+
+.clock .minute5_1 { --rotation: 156deg; }
+.clock .minute5_2 { --rotation: 162deg; }
+.clock .minute5_3 { --rotation: 168deg; }
+.clock .minute5_4 { --rotation: 174deg; }
+
+.clock .minute6_1 { --rotation: 186deg; }
+.clock .minute6_2 { --rotation: 192deg; }
+.clock .minute6_3 { --rotation: 198deg; }
+.clock .minute6_4 { --rotation: 204deg; }
+
+.clock .minute7_1 { --rotation: 216deg; }
+.clock .minute7_2 { --rotation: 222deg; }
+.clock .minute7_3 { --rotation: 228deg; }
+.clock .minute7_4 { --rotation: 234deg; }
+
+.clock .minute8_1 { --rotation: 246deg; }
+.clock .minute8_2 { --rotation: 252deg; }
+.clock .minute8_3 { --rotation: 258deg; }
+.clock .minute8_4 { --rotation: 264deg; }
+
+.clock .minute9_1 { --rotation: 276deg; }
+.clock .minute9_2 { --rotation: 282deg; }
+.clock .minute9_3 { --rotation: 288deg; }
+.clock .minute9_4 { --rotation: 294deg; }
+
+.clock .minute10_1 { --rotation: 306deg; }
+.clock .minute10_2 { --rotation: 312deg; }
+.clock .minute10_3 { --rotation: 318deg; }
+.clock .minute10_4 { --rotation: 324deg; }
+
+.clock .minute11_1 { --rotation: 336deg; }
+.clock .minute11_2 { --rotation: 342deg; }
+.clock .minute11_3 { --rotation: 348deg; }
+.clock .minute11_4 { --rotation: 354deg; }
 
 .clock .hand {
   --rotation: 0;

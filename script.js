@@ -2,6 +2,9 @@ const hourHand = document.querySelector('[data-hour-hand]')
 const minuteHand = document.querySelector('[data-minute-hand]')
 const secondHand = document.querySelector('[data-second-hand]')
 
+const date = document.querySelector('.date')
+// const time = document.querySelector('.time')
+
 const setClock = () => {
   const currentDate = new Date()
   const secondsRatio = currentDate.getSeconds() / 60;
@@ -11,6 +14,11 @@ const setClock = () => {
   setRotation(secondHand, secondsRatio)
   setRotation(minuteHand, minutesRatio)
   setRotation(hourHand, hoursRatio)
+
+  let digitalDate = currentDate.toISOString().split('T')[0]
+  // let digitalTime = currentDate.toLocaleTimeString();
+  date.innerHTML = digitalDate
+  // time.innerHTML = digitalTime
 }
 
 const setRotation = (element, rotationRatio) => {
